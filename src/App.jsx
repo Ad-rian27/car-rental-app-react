@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Home from './components/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavigationBar from './components/NavigationBar'
 
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <>
+      <Home />
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<NavigationBar />} />
